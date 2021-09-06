@@ -1,0 +1,66 @@
+.contenedor {
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+#seccion1{
+    background-color:darksalmon;
+    margin: 0;
+    padding: 1%;
+}
+#ingresos{
+    background-color: cadetblue;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin: 2%;
+    padding: 2%;
+    text-align: left;
+}
+#ingresos:hover,#egresos:hover{
+    box-shadow: 5px 5px 15px -5px #fff;
+}
+#egresos{
+    background-color:brown;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin: 2%;
+    padding: 2%;
+    text-align: left;
+}
+#seccion2{
+    background-color: rgb(235, 233, 233);
+    padding: 1%;
+}
+#seccion2 .btn{
+    background-color: rgb(235, 233, 233);
+    padding: 1%;
+    border: none;
+}
+#listaIngresos{
+    color: cadetblue;
+    padding: 5%;
+    font-size: larger;
+}
+#listaEgresos{
+    color: brown;
+    padding: 5%;
+    font-size: larger;
+}
+
+#promGral{
+    background-color: rgb(172, 70, 70);
+    border-radius: 8px;
+    font-size: small;
+    padding-right: 3%;
+}
+
+#promGral{
+    background-color: rgb(172, 70, 70);
+    border-radius: 8px;
+    font-size: small;
+    padding-right: 3%;
+}
+
+#itemEgreso, #itemIngreso{
+    color: #000;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <title>Presupuesto</title>
+  </head>
+  <body>
+    <section id="seccion1">
+        <div class="contenedor">
+            <h4 class="display-5">Presupuesto Disponible:</h4>
+            <h2 class="display-3" id="presupuesto"></h2>
+            <div class="row" id="ingresos">
+                <div class="col-lg-6">INGRESOS</div>
+                <div class="col-lg-4" id="ingreso"></div>
+            </div>
+            <div class="row" id="egresos">
+                <div class="col-lg-6">EGRESOS</div>
+                <div class="col-lg-4" id="egreso"></div>
+                <div class="col-lg-2" id="promGral"></div>
+            </div>
+        </div>
+    </section>
+    <section id="seccion2">
+        <div class="container">
+            <form id="formulario" action="">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-1">
+                        <select  id="select" class="form-control">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                          </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <input id="descripcion" class="form-control" type="text" placeholder="Agregar descripción">
+                    </div>
+                    <div class="col-lg-2">
+                        <input id="valor" class="form-control" type="text" placeholder="Valor">
+                    </div>
+                    <div class="col-lg-1">
+                        <button type="button" id="boton" onclick="agregar()" class="btn btn-light"><i class="bi bi-check-circle text-success" style="font-size: 1.5rem;"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="seccion3">
+        <div class="container">
+            <div class="row">
+                <div id="listaIngresos" class="col-lg-6">
+                    INGRESOS
+                    <hr>
+                    <div id="itemIngreso"></div>
+                </div>
+                <div id="listaEgresos" class="col-lg-6">
+                    EGRESOS
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-10" id="itemEgreso"></div>
+                        <div class="col-lg-2" id="prom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/Ingreso_Egreso.JS"></script>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
